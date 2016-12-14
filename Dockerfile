@@ -4,7 +4,7 @@ RUN apt-get update && \
     docker-php-ext-install mysqli && \
     docker-php-ext-install pdo_mysql && \
     docker-php-ext-install zip && \
-    curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
+    curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash - && \
     apt-get install -y nodejs && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
